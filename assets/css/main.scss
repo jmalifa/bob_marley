@@ -1,4 +1,4 @@
-@import "normalize";
+@import "normalize", "foundation";
 
 /*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
 
@@ -63,142 +63,133 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-
 html {
-  height: 100%;
+height:100%;
+overflow-x:hidden;
+}
+body {
+height:100%;
+}
+#wrap {
+height: 100%;
+min-height:100%;
+width:500%;
+overflow:hidden;
 }
 
-
-body{
-  height:100%;
-  width: 12000px;
-  padding:0;
-  margin:0;
-}
-.page1 {
-  background: url(../images/bobcut.jpg);
-  background-size: cover;
-  background-position: bottom center;
-  height:100%;
-  width:930px;
-  float: left; 
-  padding-left: 30px; 
-  padding-right: 1040px; 
-
-}
-
-.page2 {
-  background-color: black;
-  background-size: cover;
-  background-position: bottom center;
-  height:100%;
-  width: 930px; 
-  float: left; 
-  padding-left: 30px; 
-  padding-right: 1040px; 
-
-}
-
-.page3 {
-  background-color: white;
-  background-size: cover;
-  background-position: bottom center;
-  height:100%;
-  width: 930px; 
-  float: left; 
-  padding-left: 30px; 
-  padding-right: 1040px; 
-
-}
-
-.page4 {
-  background-color: green;
-  background-size: cover;
-  background-position: bottom center;
-  height:100%;
-  width: 930px; 
-  float: left; 
-  padding-left: 30px; 
-  padding-right: 1040px; 
-
-}
-
-.page5 {
-  background-color: red;
-  background-size: cover;
-  background-position: bottom center;
-  height:100%;
-  width: 930px; 
-  float: left; 
-  padding-left: 30px; 
-  padding-right: 1040px; 
-
-}
-
-.page6 {
-  background-color: black;
-  background-size: cover;
-  background-position: bottom center;
-  height:100%;
-  width: 930px; 
-  float: left; 
-  padding-left: 30px; 
-  padding-right: 1040px; 
-
-}
-
-h1 {
-  position: absolute;
-  left:10px;
-  top:100px;
-  font-size: 80px;
-  font-family: BlairMdITC;
-  color: white;
-  text-shadow: 0px 0px 10px black;
-}
-
-h2 {
-
-  position: absolute;
-  left:10px;
-  top:200px;
-  font-size: 50px;
-  font-family: BlairMdITC;
-  color: white;
-  text-shadow: 0px 0px 10px black;
-
-}
-
-.navigation {
-  position:fixed;
-  bottom:0;
-  width:100%;
-  background-color:rgba(0,0,0,0.3);
-}
-
-li {
-  display: inline;
-  padding-left: 50px;
+/* -------------------PAGE ONE OF SITE---------------------------*/
+#one {
+width:20%;
+float:left;
+background: url(../images/bob.jpg) no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+height: 100%;
   
 }
 
-a {
-    text-decoration: none;
+
+
+.main-head {
+  position: absolute;
+  top:200px;
+  left:20px;
+  width:40%;
+
+  
+  h1 {
+
+    color:white;
+    font-size: 120px;
+    font-family: 'Rokkitt', serif;
+    text-shadow: 2px 2px #000000;
+    letter-spacing: 10px;
+    height: 140px;
+
+    }
+
+  h2 {
+  color:white;
+  font-size:80px;
+  font-family: 'Rokkitt', serif;
+  text-shadow: 2px 2px #000000;
+  letter-spacing: 10px;
+  height:80px;
+  }
+
+  hr {
+    margin:10px 0;
+  }
+
+  p {
+
+    color:white;
+    font-family: Helvetica, Verdana, Arial, san-serif;
+    font-weight: 100;
+    font-size:20px;
+    width:50%;
+    margin-top:30px;
+  }
+
+}
+
+/*----------------PAGE TWO OF SITE-------------------*/
+#two {
+width:20%;
+float:left;
 }
 
 
 
+#three {
+width:20%;
+float:left;
+}
 
+#four {
+width:20%;
+float:left;
+}
 
+#five {
+width:20%;
+float:left;
+}
 
+ul {
+border-top-right-radius: 15px;
+border-top-left-radius: 15px;
+position:fixed;
+bottom:0;
+width:70%;
+left:15%;
+right:15%;
+height:80px;
+line-height:40px;
+text-align:center;
+background:#ccc;
+margin:0;
+padding: 0;
+background:rgba(0,0,0,.5);
+}
+li {
+display:inline;
+margin:0 100px;
+font-family: Helvetica;
+font-size:18px;
+  a {
+    color:white;
+  }
+}
 
-
-
-
-
-
-
-
+a img {
+  margin-top: 10px;
+}
+* html ul {position:absolute;left:expression(0+((e=document.documentElement.scrollLeft)?e:document.body.scrollLeft)+'px');} 
+* html {background:url(fake.jpg)}
+* html #full {height:100%;}
 
 /* ==========================================================================
    Media Queries
