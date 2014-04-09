@@ -102,13 +102,12 @@ height: 100%;
 }
 
 
-
 .main-head {
   position: absolute;
-  top:20px;
+  top:200px;
   left:20px;
   width:27%;
-  height:90%;
+  height:50%;
 
   h2 {
   color:white;
@@ -171,21 +170,34 @@ background: url(../images/mooning.png) repeat center center fixed;
 -o-background-size: cover;
 background-size: cover;
 height: 100%;
+  
   .bio-story {
-    width:40%;
-    margin-left:20px;
     height:100%;
+
     p {
-      font-family: 'Karla', sans-serif;
-      font-weight: 100;
+      font-family:Geneva;
       font-size:14px;
-      width:100%;
+    }
+
+    h5 {
+      margin-top:50px; 
+      font-family:Geneva;
+      font-size:30px;
+    }
+
+    h6 {
+      font-family:Geneva;
+      font-size:26px;
     }
   }
-
   .bio-pic {
-    width:40%;
     height:100%;
+    position:relative;
+    
+    img {
+      position:absolute;
+      bottom:96px;
+    }
   }
 }
 
@@ -193,6 +205,12 @@ height: 100%;
 #three {
 width:20%;
 float:left;
+background: url(../images/slider1.jpeg) repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+height: 100%;
 }
 
 #four {
@@ -208,10 +226,10 @@ float:left;
 
 /*-----NAV MENU-----*/
 ul {
-border-top-right-radius: 15px;
-border-top-left-radius: 15px;
+border-bottom-right-radius: 15px;
+border-bottom-left-radius: 15px;
 position:fixed;
-bottom:0;
+top:0;
 width:60%;
 left:20%;
 right:20%;
