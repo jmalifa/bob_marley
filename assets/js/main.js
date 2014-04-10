@@ -1,6 +1,5 @@
 function playPause() {
     var audioPlayer = document.getElementById('audio');
-    $('.pause-btn').hide();
 
     if (audioPlayer.paused) {
         audioPlayer.play(); 
@@ -11,4 +10,9 @@ function playPause() {
         $('.play-btn').show();
         $('.pause-btn').hide();
     }
+
+
 }
+
+$('#wrap').animate({opacity: 0}, 0).css({
+    'background-image': 'url(../images/bob.jpg)'}).animate({opacity: 1}, 2500);

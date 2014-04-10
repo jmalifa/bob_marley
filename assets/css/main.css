@@ -5658,6 +5658,9 @@ h1 {
 .pause-btn {
   display: none; }
 
+button {
+  position: fixed; }
+
 /*----------------PAGE TWO OF SITE-------------------*/
 #two {
   width: 20%;
