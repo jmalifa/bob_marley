@@ -15,4 +15,4 @@ function playPause() {
 }
 
 $('#wrap').animate({opacity: 0}, 0).css({
-    'background-image': 'url(../images/bob.jpg)'}).animate({opacity: 1}, 2500);
+    'background-image': 'url(../images/bob.jpg)'}).animate({opacity: 1  }, 10000);
