@@ -98,7 +98,7 @@ background: url(../images/bob.jpg) no-repeat center center fixed;
 -o-background-size: cover;
 background-size: cover;
 height: 100%;
-  
+
 }
 
 
@@ -136,37 +136,58 @@ height: 100%;
     width:100%;
     margin-top:5px;
     } 
-
-
-    .music-player {
-      height:50px;
-
-    
-      img {
-      height:50px;
-      float:left;
-
-      }
-
-      p {
-        float:left;
-        margin:14px 0 14px 14px;
-        width:40%;  
-        color:grey;
-      }
-    }
+  
 
   }
 
+}
+
+.music-player {
+      position:fixed;
+      height:100px;
+      margin-top:20px;
+      background:rgba(0,0,0,.5);
+      padding:10px 10px 10px 10px;  
+      width:12%;
+      margin-top: 5px;
+      border-radius:10px;
+
+
+    
+    img {
+    height:50px;
+
+    }
 }
 
 .pause-btn {
   display:none;
 }
 
+
 button {
-  position:fixed; 
+  position:fixed;
+  background:none;
+  color:white;
+  
 }
+
+  button:hover {
+  background:none;
+  color:yellow;
+  border:none;
+}
+
+.text {
+    left:60px;
+    bottom:76px;
+}
+
+.icon {
+  bottom:64px;
+  left:0px;
+}
+
 
 /*----------------PAGE TWO OF SITE-------------------*/
 #two {
@@ -180,17 +201,11 @@ background-size: cover;
 height: 100%;
   
   .bio-story {
-    height:100%;
+    height:65%;
 
     p {
       font-family:Geneva;
       font-size:14px;
-    }
-
-    h5 {
-      margin-top:50px; 
-      font-family:Geneva;
-      font-size:30px;
     }
 
     h6 {
@@ -201,6 +216,12 @@ height: 100%;
   .bio-pic {
     height:100%;
     position:relative;
+
+     h5 {
+      margin-top:0px; 
+      font-family:Geneva;
+      font-size:30px;
+    }
     
     img {
       position:absolute;
@@ -227,6 +248,12 @@ height: 100%;
 #four { 
 width:20%;
 float:left;
+background: url(../images/news.jpg) no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+height: 100%;
 }
 
 #five {
